@@ -1,0 +1,84 @@
+{
+    "status": "ok",
+    "totalResults": 6,
+    "articles": [
+      {
+        "source": {
+          "id": "cbs-news",
+          "name": "CBS News"
+        },
+        "author": "CBS News",
+        "title": "Entain: the global leader in sports betting, gaming and interactive entertainment",
+        "description": "Revolutionising the sports betting and gaming industry for the future",
+        "url": "https://www.cbsnews.com/video/entain-the-global-leader-in-sports-betting-gaming-and-interactive-entertainment/",
+        "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2023/05/23/956a2693-5d39-4a17-a703-31ccb210a84b/thumbnail/1200x630/7d05a7979eb901399b31bfb2d36f924c/approved-thumbnail-entaingroup-uk-cbsid027-pm-20220331-1988611-640x360.jpg",
+        "publishedAt": "2023-05-23T09:01:06+00:00",
+        "content": "Watch CBS News\r\nCopyright ©2023 CBS Interactive Inc. All rights reserved.\r\nGet browser notifications for breaking news, live events, and exclusive reporting.\r\nNot NowTurn On"
+      },
+      {
+        "source": {
+          "id": "google-news-fr",
+          "name": "Google News (France)"
+        },
+        "author": "Le Parisien",
+        "title": "Transports parisiens : voici vos lignes de métro et RER les plus polluées - Le Parisien",
+        "description": null,
+        "url": "https://news.google.com/rss/articles/CBMitAFodHRwczovL3d3dy5sZXBhcmlzaWVuLmZyL2luZm8tcGFyaXMtaWxlLWRlLWZyYW5jZS1vaXNlL3RyYW5zcG9ydHMvdHJhbnNwb3J0cy1wYXJpc2llbnMtdm9pY2ktdm9zLWxpZ25lcy1kZS1tZXRyby1ldC1yZXItbGVzLXBsdXMtcG9sbHVlZXMtMjMtMDUtMjAyMy1TSkFGWlY3Tk9CQldGSU1GU0tSRlBHQlcyNC5waHDSAbgBaHR0cHM6Ly93d3cubGVwYXJpc2llbi5mci9hbXAvaW5mby1wYXJpcy1pbGUtZGUtZnJhbmNlLW9pc2UvdHJhbnNwb3J0cy90cmFuc3BvcnRzLXBhcmlzaWVucy12b2ljaS12b3MtbGlnbmVzLWRlLW1ldHJvLWV0LXJlci1sZXMtcGx1cy1wb2xsdWVlcy0yMy0wNS0yMDIzLVNKQUZaVjdOT0JCV0ZJTUZTS1JGUEdCVzI0LnBocA?oc=5",
+        "urlToImage": null,
+        "publishedAt": "2023-05-23T04:03:00+00:00",
+        "content": null
+      },
+      {
+        "source": {
+          "id": "espn",
+          "name": "ESPN"
+        },
+        "author": null,
+        "title": "A's broadcaster Glen Kuiper fired after using racial slur on air - ESPN",
+        "description": "Oakland Athletics broadcaster Glen Kuiper was fired by NBC Sports California after using a racial slur during a telecast while describing a trip to the Negro Leagues Baseball Museum.",
+        "url": "https://www.espn.com/mlb/story/_/id/37709488/a-broadcaster-glen-kuiper-fired-using-racial-slur-air",
+        "urlToImage": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0522%2Fr1176893_1024x576_16%2D9.jpg",
+        "publishedAt": "2023-05-22T21:28:13Z",
+        "content": "May 22, 2023, 05:28 PM ET\r\nOAKLAND, Calif. -- Oakland Athletics broadcaster Glen Kuiper was fired by NBC Sports California after using a racial slur during a telecast while describing a trip to the N… [+1426 chars]"
+      },
+      {
+        "source": {
+          "id": "usa-today",
+          "name": "USA Today"
+        },
+        "author": null,
+        "title": "Sports Illustrated swimsuit issue, NBA Draft Lottery, Prince Harry and Duchess Meghan. What happened in this week's news?",
+        "description": "Did you pay attention this week? Take the USA TODAY current events news quiz for the week of May 13.",
+        "url": "https://www.usatoday.com/storytelling/quiz/news-quiz/2023-05-19/",
+        "urlToImage": "https://www.gannett-cdn.com/presto/2023/05/17/USAT/4ce8bf13-6b4b-4d48-86ce-b2a5534394db-One_time_use__Harry_Meghan.jpeg",
+        "publishedAt": "2023-05-19T00:55:56+00:00",
+        "content": "Youll see our questions one at a time. You can skip questions, but that will affect your score. Well show you how you did at the end. This quiz is for registered readers. Signing up is free and easy … [+187 chars]"
+      },
+      {
+        "source": {
+          "id": "bleacher-report",
+          "name": "Bleacher Report"
+        },
+        "author": null,
+        "title": "☄️ Knicks Playoff Special ",
+        "description": "Fan easier, fan faster and fan better with Bleacher Report. Keep up with the latest storylines, expert analysis, highlights and scores for all your favorite sports.",
+        "url": "https://bleacherreport.com/videos/431020-knicks-start-playoff-run--hero-ball",
+        "urlToImage": null,
+        "publishedAt": "2023-04-17T21:22:15.1716203Z",
+        "content": "Knicks Start Playoff Run | Hero Ball"
+      },
+      {
+        "source": {
+          "id": "bleacher-report",
+          "name": "Bleacher Report"
+        },
+        "author": null,
+        "title": "&#x27;The Voncast&#x27; with Myles Garrett",
+        "description": "Fan easier, fan faster and fan better with Bleacher Report. Keep up with the latest storylines, expert analysis, highlights and scores for all your favorite sports.",
+        "url": "https://bleacherreport.com/videos/304730-the-voncast-with-myles-garrett",
+        "urlToImage": null,
+        "publishedAt": "2022-12-01T18:52:49.4768049Z",
+        "content": "Myles Garrett and Von Miller talk playing in the NBA, pick their dream NFL defense and more"
+      }
+    ]
+  }
