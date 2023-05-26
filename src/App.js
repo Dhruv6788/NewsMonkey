@@ -11,7 +11,7 @@ export default class App extends Component {
         <div>
           <Navbar/>
         </div>
-        <News />
+        <News API="fe299883370c45ec84529599f2274c79" pagesize={6}/>
       </div>
     );
   }
