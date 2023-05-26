@@ -1,30 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  background:rgb(47, 2, 71);
-  background-size: 100vw 100vh;
-  font-family: 'Pangolin', cursive;
-}
 
-@media only screen and (max-width: 399px) {
-  body {
-    background-color: rgb(3, 55, 107);
-  }
-
-  #headline {
-    overflow: hidden; 
-    white-space: nowrap;
-    position: absolute;
-    color: white;
-    animation: typingAnimation 5s steps(30) infinite;
-  }
-  
-  
-  @keyframes typingAnimation {
-    0% { width: 0; } 
-    100% { width: 100%; } 
-  }
-}
 
 
 
