@@ -4,7 +4,6 @@ import Spinner from './Spinner';
 export class News extends Component {
   constructor() {
     super();
-    console.log("Hello");
     this.state = {
       articles: [],
       loading: false,
@@ -25,7 +24,7 @@ export class News extends Component {
   }
 
   handlePrevClick = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&page=${this.state.page - 1}&category=genral`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&page=${this.state.page - 1}`;
     this.setState({loading:true});
     let data = await fetch(url);
     let parseddata = await data.json();
@@ -39,7 +38,7 @@ export class News extends Component {
 
   handleNextClick = async () => {
       this.setState({loading:true});
-      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&page=${this.state.page + 1}&category=genral`;
+      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&page=${this.state.page + 1}`;
       let data = await fetch(url);
       let parseddata = await data.json();
       this.setState({ 
@@ -82,7 +81,7 @@ export class News extends Component {
           </button>
         </div>}
        {!this.state.loading && <div>
-        <footer className="bg-light text-center text-lg-start fixed">
+        <footer className="bg-success text-center text-lg-start fixed-bottom">
       <div className="text-center p-3">
         © 2020 Copyright:
         <a className="text-dark text-decoration-none" href="/">NewsMonkey</a>
