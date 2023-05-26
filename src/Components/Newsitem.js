@@ -12,10 +12,10 @@ export class Newsitem extends Component {
             alt="..."
           />
           <div className="card-body">
-            <h5  className="card-title">{title}{`...`}</h5>
-            <p className="card-text">{description}{`...`}</p>
-            <p className="card-text"><strong>Author</strong> : {Author}</p>
-            <p className="card-text"><strong>Published on</strong> : {publishedAt}</p>
+            <h5  className="card-title ">{title}</h5>
+            <h6 className="card-subtitle mb-2 text-muted">Artical By : {Author}</h6>
+            <h6 className="card-subtitle mb-2 text-muted">Published on : {publishedAt}</h6>
+            <p className="card-text mt-1">{description}</p>
             <a href={newsUrl} rel="noreferrer" target="_blank" className="btn btn-xm btn-danger">
               Read More &rarr;
             </a>
