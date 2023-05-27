@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Newsitem from './Newsitem';
 import Spinner from './Spinner';
 export class News extends Component {
+
   constructor() {
     super();
     this.state = {
@@ -14,7 +15,8 @@ export class News extends Component {
 
   async componentDidMount() {
     this.setState({loading: true});
-    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&category=genral`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=${this.props.API}&pagesize=${this.props.pagesize}`;
+    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=${this.props.API}`;
     let data = await fetch(url);
     let parseddata = await data.json();
     this.setState({ articles: parseddata.articles,
@@ -24,7 +26,7 @@ export class News extends Component {
   }
 
   handlePrevClick = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&page=${this.state.page - 1}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&page=${this.state.page - 1}`;
     this.setState({loading:true});
     let data = await fetch(url);
     let parseddata = await data.json();
@@ -38,7 +40,7 @@ export class News extends Component {
 
   handleNextClick = async () => {
       this.setState({loading:true});
-      let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&page=${this.state.page + 1}`;
+      let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.API}&pagesize=${this.props.pagesize}&page=${this.state.page + 1}`;
       let data = await fetch(url);
       let parseddata = await data.json();
       this.setState({ 
@@ -52,7 +54,20 @@ export class News extends Component {
     return (
       <div>
         <div className="container">
-          <h2 style={{ marginTop: "70px" }}>NewsMonkey - Headlines</h2>
+          <h2 style={{ marginTop: "70px" }}> 
+          <span className="text-primary">N</span>
+              <span className="text-danger">E</span>
+              <span className="text-warning">W</span>
+              <span className="text-primary">S </span>
+              <span className="text-primary">M</span>
+              <span className="text-danger">O</span>
+              <span className="text-warning">N</span>
+              <span className="text-primary">K</span>
+              <span className="text-danger">E</span>
+              <span className="text-warning">Y </span>
+              :
+              HEADLINES
+          </h2>
           {this.state.loading && <Spinner/>}
           <div className="row">
             {!this.state.loading && articles &&
@@ -81,10 +96,10 @@ export class News extends Component {
           </button>
         </div>}
        {!this.state.loading && <div>
-        <footer className="bg-success text-center text-lg-start fixed-bottom">
-      <div className="text-center p-3">
+        <footer className="bg-dark text-center text-lg-start mt-3">
+      <div className="text-center p-3 text-light">
         © 2020 Copyright:
-        <a className="text-dark text-decoration-none" href="/">NewsMonkey</a>
+        <a className="text-light text-decoration-none" href="/">NewsMonkey</a>
       </div>
       </footer>
         </div>}
