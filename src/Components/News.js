@@ -15,8 +15,7 @@ export class News extends Component {
 
   async componentDidMount() {
     this.setState({loading: true});
-    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=${this.props.API}&pagesize=${this.props.pagesize}`;
-    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=${this.props.API}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=${this.props.API}`;
     let data = await fetch(url);
     let parseddata = await data.json();
     this.setState({ articles: parseddata.articles,
@@ -65,8 +64,7 @@ export class News extends Component {
               <span className="text-primary">K</span>
               <span className="text-danger">E</span>
               <span className="text-warning">Y </span>
-              :
-              HEADLINES
+             :  HEADLINES
           </h2>
           {this.state.loading && <Spinner/>}
           <div className="row">
@@ -95,7 +93,9 @@ export class News extends Component {
             Next &rarr;
           </button>
         </div>}
-       {!this.state.loading && <div>
+
+       {!this.state.loading &&  
+              <div className="position-static-fixed">
         <footer className="bg-dark text-center text-lg-start mt-3">
       <div className="text-center p-3 text-light">
         © 2020 Copyright:
