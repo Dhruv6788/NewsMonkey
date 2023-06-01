@@ -5,8 +5,7 @@ export default class Spinner extends Component {
     return (
       <div>
     <div className="d-flex justify-content-center">
-  <div className="spinner-border text-danger" role="status">
-    <span className="visually-hidden">Loading...</span>
+  <div className="spinner-border text-danger my-3" role="status">
   </div>
 </div>
       </div>
