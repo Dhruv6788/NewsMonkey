@@ -5,7 +5,7 @@ export class Newsitem extends Component {
   
   render() {
     
-    let { title, description, imageUrl, newsUrl, Author, publishedAt, source} = this.props;
+    let { title, description, imageUrl, newsUrl, Author, publishedAt, source } = this.props;
     return (
       <div>
         <div className="card card-sm-6 my-3 shadow-lg bg-dark animate__animated animate__zoomInUp">
@@ -18,10 +18,7 @@ export class Newsitem extends Component {
             <h6 className="card-subtitle mt-2 text-light">Published on: {publishedAt}</h6>
             <p className="card-text mt-1 text-light">{description}</p>
             <p className="card-text mt-1 text-light">From : {source.name}</p>
-            
-           
             <a
-              // href="/Content"
               href={newsUrl}
               rel="noreferrer"
               target="_blank"
