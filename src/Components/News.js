@@ -1,5 +1,3 @@
-
-
 import React, { Component } from 'react';
 import Newsitem from './Newsitem';
 import 'animate.css';
@@ -71,7 +69,7 @@ export class News extends Component {
   }
 
   render() {
-    const { articles, loading, totalResults } = this.state;
+    const { articles, totalResults } = this.state;
     return (
       <>
       
@@ -91,7 +89,6 @@ export class News extends Component {
         </h5>
        
       {this.state.loading && <Spinner/>}
-        
           <InfiniteScroll
             dataLength={articles.length}
             next={this.fetchMoreData}
@@ -117,16 +114,6 @@ export class News extends Component {
             </div>
             </div>
           </InfiniteScroll>
-        
-
-        {!loading &&
-          <div className="position-static-fixed">
-            <footer className="bg-dark text-center text-lg-start mt-3">
-              <div className="text-center p-3 text-light">
-                © 2020 - {new Date().getFullYear()} NewsMonkey
-              </div>
-            </footer>
-          </div>}
       </>
     );
   }

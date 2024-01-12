@@ -1,15 +1,10 @@
-
-
 import React, { Component } from "react";
 import Navbar from "./Components/Navbar";
 import News from "./Components/News";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar';
 
-
 export default class App extends Component {
-
-
   country = "in"
   pagesize = 9
   state = {
@@ -19,8 +14,6 @@ export default class App extends Component {
   setProgress = (progress) => {
     this.setState({ progress });
   };
-
-
 
   render() {
     return (
@@ -62,7 +55,6 @@ export default class App extends Component {
               setProgress={this.setProgress}
               key="general"
               API={process.env.REACT_APP_API_KEY}
-
               country={this.country}
               pagesize={this.pagesize}
               category="general"
@@ -125,6 +117,17 @@ export default class App extends Component {
           } />
 
           <Route path="/technology" element={
+            <News
+              setProgress={this.setProgress}
+              key="technology"
+              API={process.env.REACT_APP_API_KEY}
+              country={this.country}
+              pagesize={this.pagesize}
+              category="technology"
+            />
+          } />
+
+          <Route path="/blog" element={
             <News
               setProgress={this.setProgress}
               key="technology"

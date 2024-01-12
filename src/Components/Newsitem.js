@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import 'animate.css';
-
 export class Newsitem extends Component {
-  
   render() {
-    
     let { title, description, imageUrl, newsUrl, Author, publishedAt, source } = this.props;
     return (
       <div>

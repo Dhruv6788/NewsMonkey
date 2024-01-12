@@ -106,6 +106,14 @@ export class Navbar extends Component {
                     >Technology</Link>
                   </li>
                 </strong>
+                <strong>
+                  <li className="nav-item">
+                    <Link className="nav-link text-secondary" to="/blog"
+                    onMouseEnter={(e) => e.target.classList.add("animate__animated", "animate__swing")}
+                    onMouseLeave={(e) => e.target.classList.remove("animate__animated", "animate__swing")}
+                    >Blog</Link>
+                  </li>
+                </strong>
               </ul>
             </div>
           </div>
