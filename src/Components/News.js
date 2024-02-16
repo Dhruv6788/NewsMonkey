@@ -20,7 +20,7 @@ export class News extends Component {
     };
     document.title = `NewsMonkey : ${this.capitalizeFirstLetter(this.props.category)}`
   }
- 
+
   async componentDidMount() {
     this.updateNews();
     this.startAnimation();
@@ -28,7 +28,7 @@ export class News extends Component {
 
   updateNews = async () => {
     this.props.setProgress(10);
-    const { country, category,pagesize } = this.props;
+    const { country, category, pagesize } = this.props;
     const { page } = this.state;
     let url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${this.props.API}&pagesize=${pagesize}&page=${page}`
     this.setState({ loading: true });
@@ -45,7 +45,7 @@ export class News extends Component {
   }
 
   fetchMoreData = async () => {
-    const { country, category,pagesize} = this.props;
+    const { country, category, pagesize } = this.props;
     const { page, articles } = this.state;
     let url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${this.props.API}&pagesize=${pagesize}&page=${page}`;
     let data = await fetch(url);
@@ -64,7 +64,7 @@ export class News extends Component {
       void headline.offsetWidth;
       headline.classList.add('animate__animated', 'animate__pulse');
 
-      
+
     }, 10000);
   }
 
@@ -72,8 +72,8 @@ export class News extends Component {
     const { articles, totalResults } = this.state;
     return (
       <>
-      
-        <Jumbotron/>
+
+        <Jumbotron />
         <h5 id="headline" className="text-center animate__animated animate__pulse" style={{ marginTop: "70px" }}>
           <span className="text-primary">N</span>
           <span className="text-danger">E</span>
@@ -87,15 +87,15 @@ export class News extends Component {
           <span className="text-warning">Y </span>
           <span className="text-light">: TOP {this.props.category.toUpperCase()}  HEADLINES</span>
         </h5>
-       
-      {this.state.loading && <Spinner/>}
-          <InfiniteScroll
-            dataLength={articles.length}
-            next={this.fetchMoreData}
-            hasMore={articles.length !== totalResults}
-            loader={<Spinner/>}
-          >
-            <div className="container">
+
+        {this.state.loading && <Spinner />}
+        <InfiniteScroll
+          dataLength={articles.length}
+          next={this.fetchMoreData}
+          hasMore={articles.length !== totalResults}
+          loader={<Spinner />}
+        >
+          <div className="container">
             <div className="row">
               {articles && articles.map((element) => (
                 <div key={element.url} className="col-md-4">
@@ -112,8 +112,8 @@ export class News extends Component {
                 </div>
               ))}
             </div>
-            </div>
-          </InfiniteScroll>
+          </div>
+        </InfiniteScroll>
       </>
     );
   }
